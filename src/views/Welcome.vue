@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <div class="welcome container">
+    <p>Welcome</p>
   </div>
 </template>
 
