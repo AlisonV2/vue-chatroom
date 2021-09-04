@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="handleSubmit">
-    <h1 class="h3 mb-3 fw-normal">Sign up</h1>
+    <h2 class="h3 mb-3 fw-normal">Log in</h2>
     <div class="form-floating mb-3">
       <input
         type="email"
@@ -21,7 +21,7 @@
       />
       <label>Password</label>
     </div>
-    <button class="btn btn-lg button" type="submit">Sign up</button>
+    <button class="btn btn-lg button" type="submit">Log in</button>
   </form>
 </template>
 
@@ -31,12 +31,11 @@ import { ref } from 'vue';
 export default {
       setup() {
           // refs
-          const displayName = ref('');
           const email = ref('');
           const password = ref('');
 
           const handleSubmit = () => {
-              console.log(displayName.value, email.value, password.value)
+              console.log(email.value, password.value)
           }
 
           return {

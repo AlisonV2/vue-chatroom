@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="handleSubmit">
-    <h1 class="h3 mb-3 fw-normal">Log in</h1>
+    <h2 class="h3 mb-3 fw-normal">Sign Up</h2>
     <div class="form-floating mb-3">
       <input
         type="text"
@@ -31,7 +31,7 @@
       />
       <label>Password</label>
     </div>
-    <button class="btn btn-lg button" type="submit">Log in</button>
+    <button class="btn btn-lg button" type="submit">Sign Up</button>
   </form>
 </template>
 
@@ -46,7 +46,7 @@ export default {
           const password = ref('');
 
           const handleSubmit = () => {
-              console.log(email.value, password.value)
+              console.log(displayName.value, email.value, password.value)
           }
 
           return {
