@@ -26,12 +26,25 @@ body {
     font-size: 16px;
 }
 
-button {
+.button {
     text-decoration: none;
     background: $primary-accent;
     color: $text-light;
     font-weight: bold;
     border: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px 20px;
+    &:hover {
+        background: $bg-green;
+        color: $text-light!important;
+    }
+}
+
+.toggle-form {
+    font-weight: bold; 
+    color: $primary-accent;
+    cursor: pointer;
+    &:hover {
+        color: $bg-green;
+    }
 }
