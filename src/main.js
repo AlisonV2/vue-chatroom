@@ -5,8 +5,14 @@ import store from './store';
 import 'bootstrap/scss/bootstrap.scss';
 import 'bootstrap';
 import './assets/styles/main.scss';
+import { auth } from './firebase/config'
 
-const app = createApp(App);
-app.use(store);
-app.use(router);
-app.mount('#app');
+let app;
+
+auth.onAuthStateChanged(() => {
+  if (!app) {
+    app = createApp(App)
+      .use(router)
+      .mount('#app')
+  }
+});
