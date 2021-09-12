@@ -1,10 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import store from './store';
-import 'bootstrap/scss/bootstrap.scss';
-import 'bootstrap';
-import './assets/styles/main.scss';
+import './assets/main.css';
 import { auth } from './firebase/config'
 
 let app;

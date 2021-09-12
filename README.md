@@ -1,9 +1,17 @@
-# vue-chatroom
+# Chatroom built with Vue3, Firebase and Composition API
 
-## Project setup
+## Tech
+
+- Firebase SDK with Firestore
+- Vue Composition API 
+- date-fns 
+### Project setup
+
 ```
 npm install
 ```
+
+Don't forget to create a firebaseConfig object in the firebase folder.
 
 ### Compiles and hot-reloads for development
 ```
